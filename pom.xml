@@ -61,7 +61,6 @@
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>3.0.3</version>
             </dependency>
 
             <dependency>
@@ -73,11 +72,16 @@
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity-engine-core</artifactId>
             </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+            </dependency>
         </dependencies>
 
-    <build>
+    <!--<build>
         <plugins>
-            <!--指定maven-compiler-plugin版本-->
+            &lt;!&ndash;指定maven-compiler-plugin版本&ndash;&gt;
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -96,5 +100,5 @@
                 </includes>
             </resource>
         </resources>
-    </build>
+    </build>-->
 </project>

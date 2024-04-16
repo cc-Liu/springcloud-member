@@ -1,5 +1,5 @@
 server:
-  port: 10011
+  port: 10001
 spring:
   application:
     name: springcloud-member
@@ -7,6 +7,5 @@ spring:
     nacos:
       config:
         file-extension: yaml
-
         server-addr: 47.120.72.63:8848
-        namespace: 35dc73e0-c2a4-4d77-8e93-3eff8a398a1d
+        namespace: 32b8c20f-8bbd-4c1f-bac0-514cb88996b0

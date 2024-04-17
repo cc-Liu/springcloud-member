@@ -4,7 +4,7 @@ package com.ccl.controller;
 import cn.hutool.json.JSONUtil;
 import com.ccl.entity.Member;
 import com.ccl.service.MemberService;
-import com.ccl.until.R;
+import com.ccl.utils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

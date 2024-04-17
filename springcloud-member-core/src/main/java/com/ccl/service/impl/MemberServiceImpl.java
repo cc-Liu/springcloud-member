@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ccl.entity.Member;
 import com.ccl.mapper.MemberMapper;
 import com.ccl.service.MemberService;
-import com.ccl.until.R;
+import com.ccl.utils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;

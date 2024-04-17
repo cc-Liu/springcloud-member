@@ -2,7 +2,7 @@ package com.ccl.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ccl.entity.Member;
-import com.ccl.until.R;
+import com.ccl.utils.R;
 
 import java.util.List;
 

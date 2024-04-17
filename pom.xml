@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-member-app</module>
         <module>springcloud-member-core</module>
+        <module>springcloud-member-api</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -38,6 +39,17 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-generator</artifactId>
             </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+            </dependency>
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -51,16 +63,6 @@
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
-            </dependency>
-
-            <!--<dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-            </dependency>-->
-
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
             </dependency>
 
             <dependency>
@@ -79,9 +81,9 @@
             </dependency>
         </dependencies>
 
-    <!--<build>
+    <build>
         <plugins>
-            &lt;!&ndash;指定maven-compiler-plugin版本&ndash;&gt;
+            <!--指定maven-compiler-plugin版本-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -100,5 +102,5 @@
                 </includes>
             </resource>
         </resources>
-    </build>-->
+    </build>
 </project>

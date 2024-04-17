@@ -34,10 +34,14 @@ public class MemberController {
     * @Date: 2024/4/16
     */
     @RequestMapping("/insertMember")
-    public R inserMember(@RequestBody Member member){
+    public R insertMember(@RequestBody Member member){
         log.info("\n新22增会员信息:{}", JSONUtil.parse(member));
         return memberService.insertMember(member);
     }
 
+    @RequestMapping("/selectMemberList")
+    public R selectMemberList(){
+        return memberService.selectMemberList();
+    }
 }
 

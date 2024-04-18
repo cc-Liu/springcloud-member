@@ -1,3 +1,5 @@
+package com.ccl.feignService;
+
 import com.ccl.entity.Member;
 import com.ccl.utils.R;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Date: 2024/4/16 09:53
  * @Description:
  */
-@EnableFeignClients(basePackages = {"com.ccl.*"})
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
 public class SpringCloudMemberApplication {

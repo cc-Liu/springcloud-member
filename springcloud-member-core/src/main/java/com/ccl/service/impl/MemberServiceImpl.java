@@ -5,6 +5,7 @@ import com.ccl.entity.Member;
 import com.ccl.mapper.MemberMapper;
 import com.ccl.service.MemberService;
 import com.ccl.utils.R;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
@@ -48,12 +49,12 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
    * @return: com.ccl.until.R
    * @Date: 2024/4/16
    */
+    @GlobalTransactional
     @Override
     public R insertMember(Member member) {
         member.setCreateTime(new Date());
         member.setUpdateTime(new Date());
         int insert = memberMapper.insert(member);
-        int num = 1/0;
         return insert > 0 ? R.ok() : R.error();
     }
 }
